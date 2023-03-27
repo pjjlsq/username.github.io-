@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>我的第一个网站</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="btn">
+        <p>👇&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;简短故事&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👇</p>
+    </div>
+    <div class="top">
+        <a href="" target="_blank">我的兴趣</a>
+        <a href="" target="_blank">我的过去</a>
+        <a href="" target="_blank">我的梦想</a>
+        <a href="" target="_blank" style="float:right">lsq</a>
+    </div>
+    <div class="content">
+    
+        <h1 class="avr">The most beautiful girl</h1>
+    </div>
+
+
+    <div class="yinyue">
+        <img class="music" src="./02.jpg" alt="">
+        <audio autoplay="autoplay" id="audio" loop="loop">
+            <source src="./music1.mp3" type="audio/MP3">
+
+        </audio>
+
+    </div>
+    <div class="row">
+        <div class="centercolumn">
+            <div class="card">
+
+                <h2 id="biaoti">题记</h2><br />
+                <hr />
+                <h4 id="qita">2023 年 3 月 27日</h4>
+
+                <p style="text-indent:2em">让你哭，让你笑；让你喜，让你忧。爱情好像就是有这种魔力，它灌注在你生命里的每个瞬间，每份每秒都能触动着你那颗敏感的心。</p>
+                <p style="text-indent:2em">有人说：爱情就像一杯毒酒，喝下后将万劫不复；也有人说：爱情就是那一杯美酒，喝下后暖入心扉。世间爱情千万种，总有那么一份是你的小幸福，总有一份是专属于你的左心房。</p>
+                <p style="text-indent:2em">
+                    幸福、甜蜜就一日不见如隔三秋；悲伤、失落就度日如年；在感情的世界，你变的多变，变得敏感。但是不论怎么改变，那份美好的恋情，我们却饮鸩止渴。
+                </p>
+            </div>
+            <br /><br />
+            <div class="card">
+                <h2 id="biaoti">国王的女儿</h2><br />
+                <hr />
+                <h4 id="qita">2023 年 3 月 27日</h4>
+                <p style="text-indent:2em">
+                    从前有一个国王有两个女儿，当两个女儿到出嫁年龄时，
+                    国王决定为她们招亲。等到了招亲那天国王对前来的个国王子说：
+                    你们谁要能做好我出的考题，我就把大女儿嫁给他！于是国王让卫兵牵来一头大象在河边。
+                    然后说道：谁要是能让大象捂着屁股跳到河里，我就把大女儿嫁给他！
+                </p>
+                <p style="text-indent:2em">
+                    各国的王子怎么也想不出办法来。就在这时一个波司王子走过来对国王说：
+                    我能做道你就把女儿嫁给我吗？虽然国王不愿意把女儿嫁给这个“黑人”，但也没办法
+                    ，只好同意了。那个王子走过去看着大象，突然从背后拿出一根针往大象屁股扎去！
+                    只见大象马上捂着屁股挑到河里了！国王没办法只好把大女儿嫁给了他。
+                </p>
+                <p style="text-indent:2em">
+                    等到二女儿出嫁时，国王想不能那么容易把女儿嫁了，
+                    于是就又出了一道题：谁要能让大象先点点头，在摇摇头，再点点头，
+                    然后再跳到河了，就把二女儿嫁他！巧的是还是那头大象，
+                    可是各国王子费尽心思也想不出办法！最后又是那个波司王子走过来说：
+                    我要能做到是不是把二女儿也嫁给我啊？国王没办法只好同意。
+                </p>
+                <p style="text-indent:2em">
+                    波司王子走过去看了大象一会对大象说：
+                    你还认识我吗？大象点点头。那你还想象上次那样吗？
+                    大象摇了摇头。那你知道该怎么做吗？大象又点点头，
+                    然后就自己捂着屁股跳到河里了。
+                </p>
+            </div>
+
+        </div>
+
+
+    </div>
+   
+    
+    <br /><br />
+    <button class="bt" onclick="window.open('可以填写网址')">Big Miss Pan</button>
+
+    <script>
+    let mucics = document.getElementById('audio')
+    document.body.addEventListener('mousemove', function() {
+        setTimeout(() => {
+            mucics.play();
+        }, 2000);
+    }, false);
+    </script>
+    
+    <div class="footer">
+        <br />
+        <p>希望能成为有梦想 有温度的教技人</p><br />
+        <p>你好 我是LSQ</p><br />
+    </div>
+    <script>
+        //鼠标点击出现爱心特效  这部分特效是从一个网页搬过来的  觉得挺好看的
+        (function (window, document, undefined) {
+            var hearts = [];
+            window.requestAnimationFrame = (function () {
+                return window.requestAnimationFrame ||
+				window.webkitRequestAnimationFrame ||
+				window.mozRequestAnimationFrame ||
+				window.oRequestAnimationFrame ||
+				window.msRequestAnimationFrame ||
+				function (callback) {
+				    setTimeout(callback, 1000 / 60);
+				}
+            })();
+            init();
+            function init() {
+                css(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: absolute;}.heart:after{top: -5px;}.heart:before{left: -5px;}");
+                attachEvent();
+                gameloop();
+            }
+            function gameloop() {
+                for (var i = 0; i < hearts.length; i++) {
+                    if (hearts[i].alpha <= 0) {
+                        document.body.removeChild(hearts[i].el);
+                        hearts.splice(i, 1);
+                        continue;
+                    }
+                    hearts[i].y--;
+                    hearts[i].scale += 0.004;
+                    hearts[i].alpha -= 0.013;
+                    hearts[i].el.style.cssText = "left:" + hearts[i].x + "px;top:" + hearts[i].y + "px;opacity:" + hearts[i].alpha + ";transform:scale(" + hearts[i].scale + "," + hearts[i].scale + ") rotate(45deg);background:" + hearts[i].color;
+                }
+                requestAnimationFrame(gameloop);
+            }
+            function attachEvent() {
+                var old = typeof window.onclick === "function" && window.onclick;
+                window.onclick = function (event) {
+                    old && old();
+                    createHeart(event);
+                }
+            }
+            function createHeart(event) {
+                var d = document.createElement("div");
+                d.className = "heart";
+                hearts.push({
+                    el: d,
+                    x: event.clientX - 5,
+                    y: event.clientY - 5,
+                    scale: 1,
+                    alpha: 1,
+                    color: randomColor()
+                });
+                document.body.appendChild(d);
+            }
+            function css(css) {
+                var style = document.createElement("style");
+                style.type = "text/css";
+                try {
+                    style.appendChild(document.createTextNode(css));
+                } catch (ex) {
+                    style.styleSheet.cssText = css;
+                }
+                document.getElementsByTagName('head')[0].appendChild(style);
+            }
+            function randomColor() {
+                return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + ")";
+            }
+        })(window, document);
+    </script>
+</body>
+</html>
